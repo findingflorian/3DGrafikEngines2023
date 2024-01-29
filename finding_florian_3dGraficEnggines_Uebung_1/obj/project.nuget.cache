@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "8y6jmccAnARm0NDxaE/R+V+NyZ50WVvdH5gtTEPDP5AZau6FtOm4VWFrJyXcV+Vdd3SjY8WCaYTACn06ap6unQ==",
+  "success": true,
+  "projectFilePath": "E:\\3dGrafikEngines_U1\\finding_florian_3dGraficEnggines_Uebung_1\\3DEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.core\\4.7.4\\opentk.core.4.7.4.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.graphics\\4.7.4\\opentk.graphics.4.7.4.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.mathematics\\4.7.4\\opentk.mathematics.4.7.4.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.redist.glfw\\3.3.7.27\\opentk.redist.glfw.3.3.7.27.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.windowing.common\\4.7.4\\opentk.windowing.common.4.7.4.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.windowing.desktop\\4.7.4\\opentk.windowing.desktop.4.7.4.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.windowing.graphicslibraryframework\\4.7.4\\opentk.windowing.graphicslibraryframework.4.7.4.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\opentk.winforms\\4.0.0-pre.7\\opentk.winforms.4.0.0-pre.7.nupkg.sha512",
+    "C:\\Users\\Flocki\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
