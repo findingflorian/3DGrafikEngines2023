@@ -1,0 +1,136 @@
+public MeshRenderer
+
+this.InitDeleteMenu():
+this.shaderHost = new Shader(@"./shader/vertex.shader", @"./shader/fragment.shader);
+
+InitDeleteMenu()
+{
+this.ContextMenuStrip= new ContextMenuStrip();
+
+private void button1_Click(object sneder, EventArgs e)
+{
+DialogResult result = this.openFileDialog1.ShowDialog();
+if (result == DialogResult.OK)
+{
+this.buildVBO();
+}
+}
+
+private void buildVBO()
+{
+if (this.modelData != null)
+{
+this.triangleVboHandle = GL.GenBuffer();
+this.TriangleVboHandle = GL.GenVertexArray();
+GL.BindVertexArray(this.TriangleVaoHandle);
+GL.BindBuffer(BufferTarget.ArrayBuffer, this.triangleVboHandle);
+List<float> tmpVertexList = newList<float>();
+}
+}
+foreach (Group group in this.modelData.Groups)
+{
+foreach ( Face face in group.Faces)
+{
+for (int vIdx = 0; vIdx <3; vIdx++)
+{
+this.triangleVertexCnt++;
+tmpVertexList.Add(modelData.Vertices[face[vIdx].VertexIndex - 1].X);
+-||-.Y;
+-||-.Z;
+}
+}
+}
+
+float[] fullVertexData = tmpVertexList.ToArray();
+
+GL.BufferData(BufferTarget.ArrayBuffer, fullVertexData.Length*sizeof(float), fullVertexData, BufferUsageHint.StaticDraw);
+GL.VertexAttribPointer(0, 3. VertexAttriPointerType.Float, false, 3 * sizeof(float), 0);
+GL.EnableVertexAttribArray(0);
+
+this.lineVboHandle = GL.GenBuffer();
+this.lineVaoHandle = GL.GenVertexArray();
+GL.BindVertexArray(this.lineVaoHandle);
+
+GL.BindBuffer(BufferTarger.ArrayBuffer, this.lineVboHandle);
+tmpVertexList.Clear();
+
+foreach (Group group in this.modelData.Groups)
+{
+foreach (Face face in group Faces)
+{
+for (int vIdx = 0; vIdx <3, vIdx++;)
+
+
+Ordner Shader machen-
+
+von Übung 4PDF - auf Gist Link gehen, code kopieren
+bzw. Shader.cs einfügen
+https://gist.github.fh-kaernten.at/wehr/49932743e9a1b64cbdc4fad46a2e0aab
+
+vertex.shader und fragment.shader shader datei erzeugen
+von moodle Glsl für Visual Studio herunterladen
+https://marketplace.visualstudio.com/items?itemName=DanielScherzer.GLSL
+
+
+vertex Shader:
+#version 330 core
+layout (location = 0) in vec3 aPosition;
+
+uniform mat4 projection;
+uniform mat4 transformation;
+
+void main()
+{
+gl_Position = vec4(aPosition, 1.0f) * transformation * projection;
+}
+
+fragment Shader;
+#version 330 core
+
+uniform vec3 color;
+out vec4 fragColor;
+
+void main()
+{
+fragColor = vec4(color, 1.0);
+}
+
+
+buildDataInformation()
+
+...
+
+
+im foreach
+Foto auf Iphone
+
+
+doRender
+this.shaderHost.Use();
+
+this.shaderHost.SetMatrix4("transformation", transformation);
+this.shaderHost.SetMatrxi4("projection", Form1.projection);
+this.shaderHost.SetVector3("color", new Vector3(this.color.X, this.color.Y, this.color.Z));
+
+GL.BindVertexArray(this.TriangleVaoHandle);
+
+GL.PolygonOffset(1.0f, 1f);
+GL.Enable(EnableCap.PolygonOffsetFill);
+
+GL.DrawArray(PrimitiveType.Triangles, 0, this.triangleVertexCnt);
+GL.Disable(EnableCap.PolygonOffsetFill);
+
+GL.BindVertexArray(this.lineVaoHandle);
+this.shaderHost.SetVector3("color", new Vector3(Color4.Black.R, Color4.Black.G, Color4.Black.?);
+GL.LineWidth(1.0f)
+GL.Drawarrays(PrimitiveType.Lines,0,this.linesVertexCnt);
+
+Form1.cs
+
+public static Matrix4 projection = Matrix4 
+
+Resize funktion
+
+Form1.projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45.0f), aspect, 0.1f, 100f);
+
+UserControl Transformation.cs
